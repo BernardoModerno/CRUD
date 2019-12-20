@@ -4,7 +4,7 @@
 
 <head>
 
-<meta charset="utf-6">
+<meta charset="utf-8">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -49,7 +49,7 @@
 
     <label >Nro Produto</label>
 
-    <input type="number" class="form-control" name="nroproduto"  placeholder="Insira o numero  do produto">
+    <input type="number" class="form-control" name="nroproduto"  placeholder="Insira o numero  do produto" autocomplete="off" required>
 
    
 
@@ -61,7 +61,7 @@
 
     <label >Nome Produto</label>
 
-    <input type="text" class="form-control" name="nomeproduto"  placeholder="Insira o nome  do produto">
+    <input type="text" class="form-control" name="nomeproduto"  placeholder="Insira o nome  do produto" autocomplete="off" required>
 
       </div>
 
@@ -91,7 +91,7 @@
 
     <label >Quantidade</label>
 
-    <input type="number" class="form-control" name="quantidade"  placeholder="Insira quantidade do produto">
+    <input type="number" class="form-control" name="quantidade"  placeholder="Insira quantidade do produto" autocomplete="off" required>
 
    </div>
 

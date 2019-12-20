@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Listagem de Produtos</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+        <script src="https://kit.fontawesome.com/a9b1777703.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -18,6 +18,7 @@
       <th scope="col">Categoria</th>
       <th scope="col">Quantidade</th>
       <th scope="col">Fornecedor</th>
+      <th scope="col">Ação</th>
     </tr>
     </thead>
   
@@ -39,12 +40,13 @@
         ?>
       
     <tr>
-    
+
       <td><?php echo $nroproduto ?></td>
       <td><?php echo $nomeproduto ?></td>
       <td><?php echo $categoria ?></td>
       <td><?php echo $quantidade ?></td>
       <td><?php echo $fornecedor ?></td>
+      <td><a class="btn btn-warning btn-sm" style="color: #fff" href="editar_produto.php?id=<?php echo $id_estoque ?>" role="button"><i class="far fa-edit"></i>&nbsp;Editar</a></td>
 
       <?php } ?>
 

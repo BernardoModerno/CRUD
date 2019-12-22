@@ -3,7 +3,6 @@ include 'conexao.php';
 
 $id = $_GET['id'];
 
-
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +45,7 @@ $id = $_GET['id'];
 <div class="container jumbotron" id="tamanhoContainer" style="margin-top: 40px">
 
 <h4>Formulário de Cadastro </h4>
-<form action="_inserir_produto.php" method="post"   style="margin-top: 20px">
+<form action="_atualizar_produto.php" method="post"   style="margin-top: 20px">
 
 <?php
 
@@ -67,6 +66,8 @@ $id = $_GET['id'];
     <label >Nro Produto</label>
                                                                          
     <input type="number" class="form-control" name="nroproduto" value="<?php echo $nroproduto ?>" disabled>
+    <input type="number" class="form-control" name="id" value="<?php echo $id ?>" style="display: none">
+
 
  </div>
 
@@ -84,7 +85,7 @@ $id = $_GET['id'];
 
     <label >Categoria</label>
 
-    <select class="form-control" name="categoria" value="<?php echo $categoria ?>" >
+    <select class="form-control" name="categoria" >
 
       <option>Periféricos</option>
 
@@ -114,7 +115,7 @@ $id = $_GET['id'];
 
     <label >Fornecedor</label>
 
-    <select  class="form-control" name="fornecedor" value="<?php echo $fornecedor ?>">
+    <select  class="form-control" name="fornecedor" >
 
       <option>Fornecedor A</option>
 
